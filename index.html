@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/e032011ee4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Hommet Real Estate Services | Home Page</title>
+</head>
+<body>
+    <header>
+        <div id="header-mobile">
+            <ul>
+                <li>
+                    <div id="icon">
+                        <div id="hamburger"></div>
+                    </div>
+                </li>
+                <li><i class="fas fa-phone"></i></li>
+                <li><i class="fas fa-envelope-square"></i></li>
+            </ul>
+        </div>
+        <div id="header-container">
+            <nav id="left-side">
+                <ul>
+                    <li>
+                        <!--<i class="fab fa-autoprefixer fa-3x"></i>--><span id="logo-text">HOMMET</span><br /><span id="logo-aide">Real Estate Services</span>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="right-side">
+                <ul id="top-nav">
+                    <li class="top-main" id="social-media">
+                        <ul>
+                            <li><i class="fab fa-facebook"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-youtube"></i></li>
+                            <li><i class="fab fa-linkedin"></i></li>
+                            <li><i class="fab fa-pinterest"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                        </ul>
+                    </li>
+                    <li class="top-main"><i class="fas fa-phone"></i> 123.456.7890</li>
+                    <li class="top-main"><i class="fas fa-envelope-square"></i> agent@hommet.com</li>
+                </ul>
+                <ul id="bottom-nav">
+                    <li class="main-categories">
+                        <span class="main-categories-text">HOME</span>
+                    </li>
+                    <li class="main-categories">
+                        <span class="main-categories-text">PROPERTIES</span>
+                    </li>
+                    <li class="main-categories">
+                        <i class="caret fas fa-chevron-down fa-1x"></i>
+                        <span class="main-categories-text">COMMUNITIES</span>
+                    </li>
+                    <li class="main-categories">
+                        <i class="caret fas fa-chevron-down fa-1x"></i>
+                        <span class="main-categories-text">BUYERS</span>
+                    </li>
+                    <li class="main-categories">
+                        <span class="main-categories-text">SELLERS</span>
+
+                    </li>
+                    <li class="main-categories">
+                        <span class="main-categories-text">ABOUT</span>
+                    </li>
+                    <li class="main-categories">
+                        <span class="main-categories-text">CONTACT</span>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+<div id="hero">
+
+    <div class="hero-background-image"></div>
+    <div class="hero-background-image"></div>
+    <div class="hero-background-image"></div>
+    <div id="hero-background-image-helper"></div>
+    <div id="hero-background-text">
+        <h2>We're passionate about finding you the home of your dreams.</h2>
+        <button id="hero-find-your-dream">Find Your Dream Home!</button>
+    </div>
+
+    <button class="btn" onClick="slideImage(-1)" id="btn-1">
+        <div class="arrow" id="arrow-left">
+        </div>
+    </button>
+    <button class="btn" onClick="slideImage(1)" id="btn-2">
+        <div class="arrow" id="arrow-right">
+        </div>
+    </button>
+
+</div>
+
+<div id="search">
+    <div id="search-wrap">
+        <i class="fas fa-search"></i>
+        <select>
+            <option value="" disabled selected hidden>Property Type</option>
+        </select>
+        <input value="" placeholder="City or ZIP">
+        <select>
+            <option value="" disabled selected hidden>Bedrooms</option>
+        </select>
+        <select>
+            <option value="" disabled selected hidden>Bathrooms</option>
+        </select>
+        <select>
+            <option value="" disabled selected hidden>Min Price</option>
+        </select>
+        <select>
+            <option value="" disabled selected hidden>Max Price</option>
+        </select>
+        <button>SEARCH</button>
+        <p>Advanced Search</p>
+    </div>
+</div>
+
+<div id="introduction">
+    <div id="introduction-wrap">
+        <div class="introduction-sec"></div>
+        <div class="introduction-sec">
+            <h2><span id="welcome-to">Welcome to</span><br /> Hommet Real Estate</h2><br />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu consequat ligula. Etiam porta, lacus
+                sed convallis lobortis, tellus ipsum lacinia libero, vitae porta sapien magna eu odio. Cras vehicula vel
+                sapien vitae laoreet. Maecenas luctus nunc at orci consectetur bibendum. Mauris posuere maximus odio, et
+                vulputate libero semper quis. Etiam varius eu purus in sagittis. Integer ullamcorper orci sit amet
+                posuere hendrerit. Morbi et purus mauris.</p><br />
+            <p>Integer nec arcu vehicula eros lobortis lacinia eu et odio. Suspendisse a mi erat. Nunc porta iaculis
+                magna, in imperdiet urna pretium et. Aenean ex lorem, tincidunt ut luctus sit amet, vulputate et mi.
+                Nullam laoreet magna ac velit pharetra aliquam. Aliquam felis ex, laoreet nec gravida a, scelerisque ut
+                diam.</p>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div id="services-wrap">
+        <div class="service"><button>Find Your Dream Home<i class="fas fa-home"></i></button></div>
+        <div class="service"><button>Sell Your Home<i class="fas fa-dollar-sign"></i></button></div>
+        <div class="service"><button>What's My Home Worth?<i class="fas fa-search-location"></i></button></div>
+        <!-- <div class="service">Search Properties</div>
+        <div class="service">Sign Up</div>
+        <div class="service">Contact Us</div> -->
+    </div>
+</div>
+
+<div id="featured">
+    <div id="featured-text">
+        <h2>Featured Listings</h2>
+    </div>
+    <div id="featured-wrap">
+        <div class="feature">
+            <div class="feature-sec">
+                <div class="feature-sec-helper">
+                    <p>$500,000</p>
+                </div>
+            </div>
+            <div class="feature-sec">
+                <p class="address">8341 Red Fox Way</p>
+                <p class="city-state">Elk Grove, CA 95758</p>
+                <p class="details">
+                    <span class="details-sec">
+                        <i class="fas fa-bed"></i>
+                        <span class="bed-detail">12 BD</span>
+                    </span>
+                    <span class="details-sec">
+                        <i class="fas fa-bath"></i>
+                        <span class="bath-detail">12 BA</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-sec">
+                <div class="feature-sec-helper">
+                    <p>$500,000</p>
+                </div>
+            </div>
+            <div class="feature-sec">
+                <p class="address">9126 Brienne Way</p>
+                <p class="city-state">Elk Grove, CA 95758</p>
+                <p class="details">
+                    <span class="details-sec">
+                        <i class="fas fa-bed"></i>
+                        <span class="bed-detail">12 BD</span>
+                    </span>
+                    <span class="details-sec">
+                        <i class="fas fa-bath"></i>
+                        <span class="bath-detail">12 BA</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-sec">
+                <div class="feature-sec-helper">
+                    <p>$500,000</p>
+                </div>
+            </div>
+            <div class="feature-sec">
+                <p class="address">9743 White Pine Way</p>
+                <p class="city-state">Elk Grove, CA 95624</p>
+                <p class="details">
+                    <span class="details-sec">
+                        <i class="fas fa-bed"></i>
+                        <span class="bed-detail">12 BD</span>
+                    </span>
+                    <span class="details-sec">
+                        <i class="fas fa-bath"></i>
+                        <span class="bath-detail">12 BA</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-sec">
+                <div class="feature-sec-helper">
+                    <p>$500,000</p>
+                </div>
+            </div>
+            <div class="feature-sec">
+                <p class="address">8818 Kepler Ct</p>
+                <p class="city-state">Elk Grove, CA 95758</p>
+                <p class="details">
+                    <span class="details-sec">
+                        <i class="fas fa-bed"></i>
+                        <span class="bed-detail">12 BD</span>
+                    </span>
+                    <span class="details-sec">
+                        <i class="fas fa-bath"></i>
+                        <span class="bath-detail">12 BA</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact-us">
+    <div id="contact-us-wrap">
+        <h2>Contact us for a free consultation. No Obligation. No Catch.</h2>
+        <button>Contact Us</button>
+    </div>
+</div>
+
+
+<div id="communities">
+    <div id="communities-text">
+        <h2>Featured Communities</h2>
+    </div>
+    <div id="communities-wrap">
+        <div class="community">
+            <div class="community-helper">Elk Grove</div>
+        </div>
+        <div class="community">
+            <div class="community-helper">Roseville</div>
+        </div>
+        <div class="community">
+            <div class="community-helper">Rocklin</div>
+        </div>
+        <div class="community">
+            <div class="community-helper">Citrus Heights</div>
+        </div>
+    </div>
+</div>
+
+<div id="testimonials">
+    <div id="testimonials-text">
+        <h2>Testimonials</h2>
+    </div>
+    <div id="testimonial-container">
+        <div id="testimonial-arrow-left" class="testimonial-arrow"></div>
+        <div id="testimonial-slider">
+            <div id="testimonial-slider-container">
+                <div class="testimonial slide1" id="lastClone">
+                    <div class="slide_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur
+                        purus nec arcu sodales tristique. Maecenas dictum luctus faucibus. Donec non sapien efficitur,
+                        euismod risus sit amet, feugiat metus. Suspendisse rutrum sodales sem, a tempor augue
+                        consectetur vitae. Duis fringilla lobortis augue sed vestibulum. Aliquam erat volutpat. </div>
+                </div>
+
+                <div class="testimonial slide2">
+                    <div class="slide_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur
+                        purus nec arcu sodales tristique. Maecenas dictum luctus faucibus. Donec non sapien efficitur,
+                        euismod risus sit amet, feugiat metus. Suspendisse rutrum sodales sem, a tempor augue
+                        consectetur vitae. Duis fringilla lobortis augue sed vestibulum. Aliquam erat volutpat. </div>
+                </div>
+
+                <div class="testimonial slide3">
+                    <div class="slide_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur
+                        purus nec arcu sodales tristique. Maecenas dictum luctus faucibus. Donec non sapien efficitur,
+                        euismod risus sit amet, feugiat metus. Suspendisse rutrum sodales sem, a tempor augue
+                        consectetur vitae. Duis fringilla lobortis augue sed vestibulum. Aliquam erat volutpat. </div>
+                </div>
+
+                <div class="testimonial slide4">
+                    <div class="slide_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur
+                        purus nec arcu sodales tristique. Maecenas dictum luctus faucibus. Donec non sapien efficitur,
+                        euismod risus sit amet, feugiat metus. Suspendisse rutrum sodales sem, a tempor augue
+                        consectetur vitae. Duis fringilla lobortis augue sed vestibulum. Aliquam erat volutpat. </div>
+                </div>
+
+                <div class="testimonial slide5" id="firstClone">
+                    <div class="slide_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur
+                        purus nec arcu sodales tristique. Maecenas dictum luctus faucibus. Donec non sapien efficitur,
+                        euismod risus sit amet, feugiat metus. Suspendisse rutrum sodales sem, a tempor augue
+                        consectetur vitae. Duis fringilla lobortis augue sed vestibulum. Aliquam erat volutpat. </div>
+                </div>
+            </div>
+        </div>
+        <div id="testimonial-arrow-right" class="testimonial-arrow"></div>
+    </div>
+</div>
+
+<div id="more">
+    <div id="more-sec-wrap">
+        <div class="more-sec">
+            <div class="more-sec-title">
+                <h3>Latest Posts <i class="fas fa-book-open"></i></h3>
+            </div>
+            <div class="more-sec-sections-wrap">
+                <div class="more-sec-sections">
+                    <div class="picture"></div>
+                    <div class="post">
+                        <h4>SIGNS THAT NOW IS THE TIME TO SELL YOUR HOME</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lorem lacus, iaculis in
+                            fringilla a, dignissim ut quam. Quisque elementum libero non aliquam porta.</p>
+                        <a>Read More &#187;</a>
+                    </div>
+                </div>
+                <div class="more-sec-sections">
+                    <div class="picture"></div>
+                    <div class="post">
+                        <h4>SIGNS THAT NOW IS THE TIME TO SELL YOUR HOME</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi lorem lacus, iaculis in
+                            fringilla a, dignissim ut quam. Quisque elementum libero non aliquam porta. </p>
+                        <a>Read More &#187;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-sec">
+            <div class="more-sec-title">
+                <h3>Areas of Expertise<i class="fas fa-map-marked-alt"></i></h3>
+            </div>
+            <div class="more-sec-sections-wrap">
+                <div class="more-sec-sections">
+                    <ul>
+                        <li>Citrus Heights</li>
+                        <li>Elk Grove</li>
+                        <li>Folsom</li>
+                        <li>Galt</li>
+                        <li>Isleton</li>
+                    </ul>
+                </div>
+                <div class="more-sec-sections">
+                    <ul>
+                        <li>Rancho Cordova</li>
+                        <li>Placerville</li>
+                        <li>Natomas</li>
+                        <li>Rocklin</li>
+                        <li>Gold River</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div id="footer-container">
+        <div class="footer-sec">
+            <h3><span id="logo-text">HOMMET</span></h3>
+            <span>REAL ESTATE SERVICES</span>
+        </div>
+        <div class="footer-sec">
+             <!-- <div class="footer-sec-row">
+                <ul>
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                    <li><i class="fab fa-pinterest"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+            </div>  -->
+            <div class="footer-sec-row">
+                <ul>
+                    <li>HOME</li>
+                    <li>PROPERTIES</li>
+                    <li>COMMUNITIES</li>
+                    <li>BUYERS</li>
+                    <li>SELLERS</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+            <div class="footer-sec-row">
+                &copy; 2019 HOMMET. All rights reserved. Real Estate Website Design by Richard Duong
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js">
+</script>
+</body>
+</html>
