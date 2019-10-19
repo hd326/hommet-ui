@@ -691,18 +691,18 @@ header {
 
         #introduction-wrap {
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
             grid-gap: 0px;
 
             .introduction-sec:nth-of-type(1) {
                 grid-row: 2;
                 background-position-y: 0px;
-                display:grid;
-                justify-self:center;
+                display: grid;
+                justify-self: center;
             }
 
             .introduction-sec:nth-of-type(2) {
                 grid-row: 1;
+
                 h2 {
                     text-align: center;
                 }
@@ -713,10 +713,10 @@ header {
 
 @include mQ(500px) {
     #introduction {
-
         #introduction-wrap {
             .introduction-sec:nth-of-type(1) {
-
+                width: 250px;
+                height: 250px;
             }
         }
     }
